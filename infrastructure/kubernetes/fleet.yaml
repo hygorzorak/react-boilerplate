@@ -1,0 +1,25 @@
+namespace: default
+targetCustomizations:
+- name: development
+  clusterSelector:
+    matchLabels:
+      env: development
+  yaml:
+    overlays:
+    - development
+
+- name: staging
+  clusterSelector:
+    matchLabels:
+      env: staging
+  yaml:
+    overlays:
+    - staging
+
+- name: production
+  clusterSelector:
+    matchLabels:
+      env: production
+  yaml:
+    overlays:
+    - production
