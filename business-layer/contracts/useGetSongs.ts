@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { RqQueryKey } from '../tactics/rq-keys/queries';
 
 async function fetchSongs() {
   const response = await fetch('/songs.json');
@@ -9,7 +10,7 @@ async function fetchSongs() {
 }
 
 export function useGetSongs() {
-  return useQuery(['songs'], fetchSongs, {
+  return useQuery([RqQueryKey.Songs], fetchSongs, {
     select: ({ songs }: { songs: Song[] }) => songs,
   });
 }

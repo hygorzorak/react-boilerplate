@@ -1,20 +1,6 @@
-import { QueryKey, useQuery } from '@tanstack/react-query';
+import { QueryKey } from '@tanstack/react-query';
 
-import { queryClient } from '@/scaffolding/rq-config';
-import { RqQueryKey } from '../rq-keys/queries';
-
-export const useQueryFetch = ({ apiSignature, ...props }: QueryProps) => {
-  if (
-    Object.values(RqQueryKey).includes(apiSignature.queryKey) ||
-    apiSignature.queryKey.includes('-test')
-  ) {
-    return useQuery([apiSignature.queryKey], () => apiSignature.queryFn(), {
-      ...props,
-    });
-  } else {
-    throw Error(`"${apiSignature.queryKey}" query key does not exist`);
-  }
-};
+import { queryClient } from '@/config/rq-config';
 
 export const useQueryPrefetch = async (queryKey: QueryKey, options: any = {}) => {
   try {

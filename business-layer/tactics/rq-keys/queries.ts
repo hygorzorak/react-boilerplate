@@ -1,5 +1,5 @@
-import { ExampleKey } from './example/queries';
+import { SongsKey } from './songs/queries';
 
 export const RqQueryKey = {
-  ...ExampleKey,
+  ...SongsKey,
 };

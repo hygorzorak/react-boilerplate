@@ -4,4 +4,5 @@ import { RqMutationKey } from '../tactics/rq-keys/mutations';
 export { RqQueryKey, RqMutationKey };
 
 /** CONTRACTS */
-export * from './example';
+export * from './useGetSongs';
+
