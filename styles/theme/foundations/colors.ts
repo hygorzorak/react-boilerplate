@@ -4,10 +4,6 @@ const colors = {
   black: '#000000',
   white: '#FFFFFF',
 
-  brand: {
-    black: '#000000',
-  },
-
   signal: {
     info100: '#007AFF',
     info50: 'rgba(0, 122, 255, 0.5)',

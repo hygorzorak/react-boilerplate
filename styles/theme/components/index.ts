@@ -1,9 +1,5 @@
-import { Heading, Text } from './Typography';
-
-import { Tooltip } from './Tooltip';
+import { Button } from './Button';
 
 export const components = {
-  Heading: Heading,
-  Text: Text,
-  Tooltip: Tooltip,
+  Button: Button,
 };

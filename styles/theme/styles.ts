@@ -4,8 +4,8 @@ export const styles: Styles = {
   global: {
     body: {
       fontFamily: 'body',
-      color: 'chakra-body-text',
-      bg: 'chakra-body-bg',
+      color: 'white',
+      bg: 'black',
       transitionProperty: 'background-color',
       transitionDuration: 'normal',
       lineHeight: 'base',

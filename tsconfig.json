@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/scaffolding/*": ["_scaffolding/*"],
+      "@/config/*": ["_config/*"],
       "@/business-layer/*": ["business-layer/*"],
       "@/components/*": ["components/*"],
       "@/pages/*": ["pages/*"],
