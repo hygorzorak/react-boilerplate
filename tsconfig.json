@@ -17,10 +17,13 @@
     "baseUrl": ".",
     "paths": {
       "@/config/*": ["_config/*"],
-      "@/business-layer/*": ["business-layer/*"],
       "@/components/*": ["components/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/features/*": ["features/*"],
+      "@/hooks/*": ["hooks/*"],
       "@/pages/*": ["pages/*"],
       "@/intl/*": ["intl/*"],
+      "@/services/*": ["services/*"],
       "@/styles/*": ["styles/*"],
     }
   },
